@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "Smooth progressive reveal animations and interactions"
+  "date-fns": "Easy date manipulation for the day picker"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes safely"
+
+images:
+  - path: "artifacts/barber-booking/public/images/barber-bg.png"
+    description: "Soft, warm, blurred background featuring a high-end modern barber shop interior with warm amber lighting, very abstract and out of focus"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a pure frontend UI demo with no real backend, as requested.
+  - All state is managed locally in React.
+  - Uses Framer Motion for the progressive reveal effect.

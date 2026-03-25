@@ -1,0 +1,79 @@
+Create a single-page version of the booking flow for a barber scheduling app using Next.js, React, TypeScript, and Tailwind CSS.
+
+This is an alternative to the multi-step flow. The goal is to allow users to complete the entire booking process on one screen while still keeping the experience simple, clear, and not overwhelming.
+
+Design principles:
+- Keep it easy to understand for moderately tech-savvy users
+- Avoid cognitive overload by using progressive reveal and clear sections
+- Make it feel guided, even though it’s on one page
+- Optimize for mobile
+
+PAGE STRUCTURE
+
+1. Service selection (top section)
+- Title: “What are you booking?”
+- Display service cards (Haircut, Beard Trim, etc.)
+- Once a service is selected, visually mark it clearly
+- Next section becomes active
+
+2. Day selection
+- Title: “Pick a day”
+- Show horizontal scroll or grid of upcoming days
+- Include “Today” label
+- Include simple navigation like “Earlier” and “Later”
+- Show light availability indicators like “3 spots left”
+- Section is slightly dimmed until a service is selected
+
+3. Time selection
+- Title: “Pick a time”
+- Only show times for the selected day
+- Group times into:
+  - Morning
+  - Afternoon
+  - Evening
+- Show available times as large buttons
+- Show unavailable times as “Booked” with reduced opacity
+- Highlight one time as “Recommended” or “Soonest”
+- Section is dimmed until a day is selected
+
+4. Details section
+- Title: “Your details”
+- Fields:
+  - Name
+  - Phone
+  - Optional note
+- Simple, clean inputs with large tap targets
+
+5. Sticky footer
+- Show a live-updating summary:
+  - Service · Date · Time
+- Primary CTA button: “Request Appointment”
+- Button is disabled until all required fields are complete
+
+UX BEHAVIOR
+
+- Sections should feel progressively activated:
+  - Initially only service is fully active
+  - After selecting service → day section activates
+  - After selecting day → time section activates
+  - After selecting time → details section becomes focus
+- Smooth scrolling between sections when selections are made
+- Strong visual selection states for all choices
+- Keep interactions fast and obvious
+
+DESIGN STYLE
+
+- Clean, warm, minimal
+- Large text and spacing
+- Rounded cards
+- Soft shadows
+- Mobile-first layout
+- Avoid clutter and dense layouts
+
+IMPORTANT
+
+- Do NOT create a complex calendar UI
+- Do NOT overload the screen with too many competing elements
+- Maintain clarity and hierarchy so users always know what to do next
+
+This should feel like a simple, guided experience even though everything is on one page.
