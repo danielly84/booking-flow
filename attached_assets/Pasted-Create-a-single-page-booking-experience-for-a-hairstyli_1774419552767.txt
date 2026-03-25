@@ -1,0 +1,149 @@
+Create a single-page booking experience for a hairstylist (female-focused services) using Next.js, React, TypeScript, and Tailwind CSS.
+
+This is a one-page version of the booking flow that allows users to complete everything on one screen while still feeling simple and guided.
+
+The app should support a larger and more varied list of services, so the design must organize services clearly without overwhelming the user.
+
+DESIGN GOALS
+
+- Clean, modern, and slightly more elevated aesthetic (salon feel)
+- Still very easy to use for moderately tech-savvy users
+- Avoid clutter despite having more services
+- Use progressive reveal and clear sections
+- Optimize for mobile
+
+PAGE STRUCTURE
+
+1. Service selection (top section)
+
+Title: “What would you like today?”
+
+Add category tabs or filters:
+- Haircuts
+- Color
+- Styling
+- Treatments
+- Extensions
+
+Only show one category at a time.
+
+Each service should be a card with:
+- Service name
+- Duration
+- Price
+- Short description (1 line max)
+
+Example services:
+
+Haircuts:
+- Women’s Haircut — 60 min — $85
+- Trim — 30 min — $45
+- Blowout — 45 min — $55
+
+Color:
+- Root Touch-Up — 90 min — $120
+- Full Color — 2 hrs — $180
+- Highlights — 2.5 hrs — $220
+- Balayage — 3 hrs — $280
+
+Styling:
+- Blowout — 45 min — $55
+- Event Styling — 1 hr — $95
+- Bridal Trial — 1.5 hrs — $150
+
+Treatments:
+- Deep Conditioning — 30 min — $40
+- Keratin Treatment — 2 hrs — $250
+- Scalp Treatment — 45 min — $70
+
+- Selected service should have strong visual feedback
+- Next section activates after selection
+
+---
+
+2. Day selection
+
+Title: “Pick a day”
+
+- Horizontal scroll or grid of upcoming dates
+- Include “Today” label
+- Include “Earlier” and “Later” navigation
+- Show subtle availability indicators like:
+  - “Few spots left”
+  - “Almost full”
+
+- Section is dimmed until service is selected
+
+---
+
+3. Time selection
+
+Title: “Pick a time”
+
+- Show times for selected day only
+- Group into:
+  - Morning
+  - Afternoon
+  - Evening
+- Large tappable buttons
+- Show unavailable times as “Booked”
+- Highlight one as “Recommended” or “Soonest”
+
+- Section is dimmed until day is selected
+
+---
+
+4. Details section
+
+Title: “Your details”
+
+Fields:
+- Name
+- Phone
+- Optional note
+
+Placeholder:
+- “Any details for your stylist?”
+
+Keep inputs large and simple.
+
+---
+
+5. Sticky footer
+
+- Show live summary:
+  - Service · Date · Time
+- CTA button:
+  - “Request Appointment”
+
+- Button disabled until all required fields are completed
+
+---
+
+UX BEHAVIOR
+
+- Sections activate progressively:
+  - Service → Day → Time → Details
+- Smooth scrolling between sections
+- Strong visual selection states
+- Keep interactions fast and obvious
+
+---
+
+DESIGN STYLE
+
+- Slightly more elevated and soft than barber version
+- Neutral tones with subtle warm accents
+- Clean typography
+- Rounded cards
+- Soft shadows
+- Plenty of spacing
+
+---
+
+IMPORTANT
+
+- Do NOT create a complex calendar UI
+- Do NOT show all services at once without categories
+- Keep the experience simple despite having more options
+- Prioritize clarity, comfort, and ease of browsing

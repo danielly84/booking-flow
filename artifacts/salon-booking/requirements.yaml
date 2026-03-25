@@ -1,0 +1,6 @@
+packages:
+  "framer-motion": "Smooth progressive reveal animations and page transitions"
+  "date-fns": "Easy date manipulation for the day and time pickers"
+  "clsx": "Utility for conditionally joining classNames together"
+  "tailwind-merge": "Utility to merge tailwind classes without style conflicts"
+  "lucide-react": "Beautiful, consistent icons for the UI"
